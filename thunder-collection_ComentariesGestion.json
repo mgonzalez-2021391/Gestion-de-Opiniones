@@ -1,0 +1,520 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "ComentariesGestion",
+    "dateExported": "2024-03-01T16:43:32.089Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "8b72eac0-7bbd-465e-a597-973110c3171e",
+            "name": "User",
+            "containerId": "",
+            "created": "2024-02-28T01:46:21.328Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "d94ca837-777a-4b1a-bc46-091a50eb48a8",
+            "name": "Publication",
+            "containerId": "",
+            "created": "2024-02-28T01:46:41.516Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "353d2c99-a90a-4092-beec-00d80fa7e085",
+            "name": "Comment",
+            "containerId": "",
+            "created": "2024-02-28T01:47:05.496Z",
+            "sortNum": 40000
+        },
+        {
+            "_id": "4d3e34e3-4aa3-441b-96cd-53a9d67b9ad7",
+            "name": "Category",
+            "containerId": "",
+            "created": "2024-02-28T01:47:11.156Z",
+            "sortNum": 50000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "5b759ce1-d24a-44eb-8a8a-a9b2b5ef5be6",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "8b72eac0-7bbd-465e-a597-973110c3171e",
+            "name": "Create",
+            "url": "/user/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-02-28T01:47:16.908Z",
+            "modified": "2024-02-29T20:47:54.190Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Admin"
+                    },
+                    {
+                        "name": "surname",
+                        "value": "Is"
+                    },
+                    {
+                        "name": "email",
+                        "value": "isadmin@gmail.com"
+                    },
+                    {
+                        "name": "username",
+                        "value": "isadmin"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1234"
+                    },
+                    {
+                        "name": "role",
+                        "value": "ADMIN"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7e104565-4ba3-4b28-8e82-488b6ff42711",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "8b72eac0-7bbd-465e-a597-973110c3171e",
+            "name": "Login",
+            "url": "/user/login",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2024-02-28T01:47:22.148Z",
+            "modified": "2024-03-01T16:41:46.239Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "email",
+                        "value": "jbodoque@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1234"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "8b558b8c-f25a-4b6f-8c85-b00ab7b6a0d3",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "8b72eac0-7bbd-465e-a597-973110c3171e",
+            "name": "Update",
+            "url": "/user/update/65df90e4c396d625e46d4e8e",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-28T02:30:30.254Z",
+            "modified": "2024-02-28T22:33:33.813Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmOTBlNGMzOTZkNjI1ZTQ2ZDRlOGUiLCJuYW1lIjoiSnVhbiIsInN1cm5hbWUiOiJCb2RvcXVlIiwidXNlcm5hbWUiOiJqYm9kb3F1ZSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzA5MTU5NjAzLCJleHAiOjE3MDkxNzA0MDN9.or5R_n4Ei19MVCOEeaM5KdSIyVtmRNiaTmX2meAswGg"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "jbodoque"
+                    },
+                    {
+                        "name": "password",
+                        "value": "1234"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "ffe1158c-322c-453d-9deb-65cf2bb8a0db",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "d94ca837-777a-4b1a-bc46-091a50eb48a8",
+            "name": "Update",
+            "url": "/publication/update/65e0ef24140917c4142eca4a",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2024-02-29T20:40:02.027Z",
+            "modified": "2024-02-29T20:57:01.795Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "text",
+                        "value": "Mi perro ha estado mal estos últimos días, ¿alguien me podría ayudar?"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "0317d3b1-ecb0-401d-bcef-ca146548f6ab",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "d94ca837-777a-4b1a-bc46-091a50eb48a8",
+            "name": "Create",
+            "url": "/publication/create",
+            "method": "POST",
+            "sortNum": 60000,
+            "created": "2024-02-29T20:40:08.108Z",
+            "modified": "2024-02-29T20:55:00.766Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "user",
+                        "value": "65df90e4c396d625e46d4e8e"
+                    },
+                    {
+                        "name": "title",
+                        "value": "Ayudaaa"
+                    },
+                    {
+                        "name": "category",
+                        "value": "65e0eda5140917c4142eca44"
+                    },
+                    {
+                        "name": "text",
+                        "value": "Mi perro ha estado mal estos últimos días, ¿alguien me podría ayudar? :("
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "b828b8bf-2662-4c95-abaf-d5148ac4ed38",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "4d3e34e3-4aa3-441b-96cd-53a9d67b9ad7",
+            "name": "Create",
+            "url": "/category/save",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2024-02-29T20:44:24.259Z",
+            "modified": "2024-02-29T20:48:37.945Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZWQ3YTE0MDkxN2M0MTQyZWNhNDAiLCJuYW1lIjoiQWRtaW4iLCJzdXJuYW1lIjoiSXMiLCJ1c2VybmFtZSI6ImlzYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDkyMzk2OTQsImV4cCI6MTcwOTI1MDQ5NH0.AcTMjh9hJmj43jXR38cNi0UFUA84Fx02aby6wr0NazY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Mascotas"
+                    },
+                    {
+                        "name": "description",
+                        "value": "Todo tipo de asuntos sobre tus lindas mascotas"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "ca11433e-1717-4a07-b4ca-544e7e9c6721",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "4d3e34e3-4aa3-441b-96cd-53a9d67b9ad7",
+            "name": "Update",
+            "url": "/category/update/65e0eda5140917c4142eca44",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2024-02-29T20:44:30.722Z",
+            "modified": "2024-02-29T20:50:27.603Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZWQ3YTE0MDkxN2M0MTQyZWNhNDAiLCJuYW1lIjoiQWRtaW4iLCJzdXJuYW1lIjoiSXMiLCJ1c2VybmFtZSI6ImlzYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDkyMzk2OTQsImV4cCI6MTcwOTI1MDQ5NH0.AcTMjh9hJmj43jXR38cNi0UFUA84Fx02aby6wr0NazY"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Mascotas"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "22c332e5-9e77-4686-bd85-4892ba03b94a",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "4d3e34e3-4aa3-441b-96cd-53a9d67b9ad7",
+            "name": "Get",
+            "url": "/category/get",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-02-29T20:44:36.117Z",
+            "modified": "2024-02-29T20:50:40.277Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "543deb85-420a-4cab-9094-f23b969a937e",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "4d3e34e3-4aa3-441b-96cd-53a9d67b9ad7",
+            "name": "Search",
+            "url": "/category/search",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2024-02-29T20:44:41.139Z",
+            "modified": "2024-02-29T20:51:10.181Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "name",
+                        "value": "Mascotas"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "cf3f69ce-5463-4e7a-8ba4-a38bf7f23856",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "353d2c99-a90a-4092-beec-00d80fa7e085",
+            "name": "Create",
+            "url": "/comment/create",
+            "method": "POST",
+            "sortNum": 110000,
+            "created": "2024-02-29T20:57:43.763Z",
+            "modified": "2024-03-01T15:14:49.972Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "publication",
+                        "value": "65e1f0a3d834380d4c914c3c"
+                    },
+                    {
+                        "name": "user",
+                        "value": "65dea239d2507cf916d9ec34"
+                    },
+                    {
+                        "name": "title",
+                        "value": "YO PUEDO AYUDARTE"
+                    },
+                    {
+                        "name": "text",
+                        "value": "Hola, yo podría ayudarte con este asunto, sólo necesitaría saber que síntomas presenta tu mascota"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "d24eeb9d-efbd-4fb6-be69-708cc9216a7f",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "353d2c99-a90a-4092-beec-00d80fa7e085",
+            "name": "Get",
+            "url": "/comment/get",
+            "method": "GET",
+            "sortNum": 120000,
+            "created": "2024-03-01T00:57:43.609Z",
+            "modified": "2024-03-01T01:23:44.663Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZWQ3YTE0MDkxN2M0MTQyZWNhNDAiLCJuYW1lIjoiQWRtaW4iLCJzdXJuYW1lIjoiSXMiLCJ1c2VybmFtZSI6ImlzYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDkyNTYyMTUsImV4cCI6MTcwOTI2NzAxNX0.5JuWn8jTRYBc8Z0THB10MK1bpWxrHNHeHuxLAUTaxS4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2b26bede-d713-4df7-ab64-28866896bbe5",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "353d2c99-a90a-4092-beec-00d80fa7e085",
+            "name": "Search",
+            "url": "/comment/getMyCommentaries/65dea239d2507cf916d9ec34",
+            "method": "POST",
+            "sortNum": 130000,
+            "created": "2024-03-01T00:57:49.757Z",
+            "modified": "2024-03-01T01:31:06.310Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlYTIzOWQyNTA3Y2Y5MTZkOWVjMzQiLCJuYW1lIjoiTWFudWVsIiwic3VybmFtZSI6IlBlcmlxdWlsbG8iLCJ1c2VybmFtZSI6Im1wZXJpcXVpbGxvIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3MDkyNTY1ODQsImV4cCI6MTcwOTI2NzM4NH0.kNfh-RFd_xAhwjdPKfYK__8LJjf4CAkzbAS2LNyc0eE"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "a976c10d-2a1f-470c-bf0a-64c7a57799d0",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "353d2c99-a90a-4092-beec-00d80fa7e085",
+            "name": "Delete",
+            "url": "/comment/delete/65e1507c60f15f4ac562aa10",
+            "method": "DELETE",
+            "sortNum": 140000,
+            "created": "2024-03-01T01:32:43.836Z",
+            "modified": "2024-03-01T03:50:51.043Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlYTIzOWQyNTA3Y2Y5MTZkOWVjMzQiLCJuYW1lIjoiTWFudWVsIiwic3VybmFtZSI6IlBlcmlxdWlsbG8iLCJ1c2VybmFtZSI6Im1wZXJpcXVpbGxvIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3MDkyNjIxMTEsImV4cCI6MTcwOTI3MjkxMX0.8Tz8A52YXO6HwVH-D8d1T2by9sHAprrf3sWRPc0Omb4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "77e6f12d-014a-4b42-a05a-091ed5978103",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "d94ca837-777a-4b1a-bc46-091a50eb48a8",
+            "name": "Delete",
+            "url": "/publication/delete/65e15b657dffd517d55c9d13",
+            "method": "DELETE",
+            "sortNum": 150000,
+            "created": "2024-03-01T03:40:47.722Z",
+            "modified": "2024-03-01T04:38:14.843Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmOTBlNGMzOTZkNjI1ZTQ2ZDRlOGUiLCJuYW1lIjoiSnVhbiIsInN1cm5hbWUiOiJCb2RvcXVlIiwidXNlcm5hbWUiOiJqYm9kb3F1ZSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzA5MjY3ODU2LCJleHAiOjE3MDkyNzg2NTZ9.I1KA4VcFWrRln3Sh6GvHsY148x2Z3CPD9NHaqFNCok4"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7d3c6e51-0369-4e24-8b84-93ada0540bad",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "d94ca837-777a-4b1a-bc46-091a50eb48a8",
+            "name": "Get",
+            "url": "/publication/get",
+            "method": "GET",
+            "sortNum": 160000,
+            "created": "2024-03-01T03:44:16.866Z",
+            "modified": "2024-03-01T15:14:08.214Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWUwZWQ3YTE0MDkxN2M0MTQyZWNhNDAiLCJuYW1lIjoiQWRtaW4iLCJzdXJuYW1lIjoiSXMiLCJ1c2VybmFtZSI6ImlzYWRtaW4iLCJyb2xlIjoiQURNSU4iLCJpYXQiOjE3MDkzMDYwNDEsImV4cCI6MTcwOTMxNjg0MX0.Rb7pg-U4yLJvzQhbXSHs42Vvs93Hop29_haioZi87sQ"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f8463a01-ae03-4f5e-8736-abf0571318c3",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "353d2c99-a90a-4092-beec-00d80fa7e085",
+            "name": "Update",
+            "url": "/comment/update/65e15586a18cacf8d57e50c6",
+            "method": "PUT",
+            "sortNum": 170000,
+            "created": "2024-03-01T04:11:11.572Z",
+            "modified": "2024-03-01T04:19:42.256Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlYTIzOWQyNTA3Y2Y5MTZkOWVjMzQiLCJuYW1lIjoiTWFudWVsIiwic3VybmFtZSI6IlBlcmlxdWlsbG8iLCJ1c2VybmFtZSI6Im1wZXJpcXVpbGxvIiwicm9sZSI6IlVTRVIiLCJpYXQiOjE3MDkyNjYzNDEsImV4cCI6MTcwOTI3NzE0MX0.mLA6FdFrz4apbvCfdhdPpacuAl3W68iRQm1-TABmI2A"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "title",
+                        "value": "abcd"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "52417a54-fdb1-483b-bfa6-51a06ef6c603",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "d94ca837-777a-4b1a-bc46-091a50eb48a8",
+            "name": "Search",
+            "url": "/publication/searchMyPublication/65df90e4c396d625e46d4e8e",
+            "method": "POST",
+            "sortNum": 180000,
+            "created": "2024-03-01T15:21:42.191Z",
+            "modified": "2024-03-01T15:22:43.995Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmOTBlNGMzOTZkNjI1ZTQ2ZDRlOGUiLCJuYW1lIjoiSnVhbiIsInN1cm5hbWUiOiJCb2RvcXVlIiwidXNlcm5hbWUiOiJqYm9kb3F1ZSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzA5MzA2NTU2LCJleHAiOjE3MDkzMTczNTZ9.7AaY9L6Mk0I7So2cxEjmIP5nZBYy6-2P7ZR-MN_VW6w"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6fb8bb18-8a1b-446a-9fa1-afe9dc3a225d",
+            "colId": "208652f9-8d53-4b25-9e86-b98bd723ad1e",
+            "containerId": "8b72eac0-7bbd-465e-a597-973110c3171e",
+            "name": "Update Password",
+            "url": "/user/updatePass/65df90e4c396d625e46d4e8e",
+            "method": "POST",
+            "sortNum": 190000,
+            "created": "2024-03-01T16:19:25.718Z",
+            "modified": "2024-03-01T16:41:41.201Z",
+            "headers": [
+                {
+                    "name": "authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmOTBlNGMzOTZkNjI1ZTQ2ZDRlOGUiLCJuYW1lIjoiSnVhbiIsInN1cm5hbWUiOiJCb2RvcXVlIiwidXNlcm5hbWUiOiJqYm9kb3F1ZSIsInJvbGUiOiJVU0VSIiwiaWF0IjoxNzA5MzExMTkzLCJleHAiOjE3MDkzMjE5OTN9.Xy2T9vSIcNcnbwAwcK5cWHoW-rCVlbtxnWu18IE-aFk"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formencoded",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "oldPassword",
+                        "value": "12"
+                    },
+                    {
+                        "name": "newPassword",
+                        "value": "1234"
+                    }
+                ]
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "options": {
+            "baseUrl": "localhost:2656"
+        }
+    }
+}
